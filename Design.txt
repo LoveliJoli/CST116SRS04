@@ -1,0 +1,65 @@
+This program will help you calculate the sides and angles of a triangle. 
+What information do you have about the triangle?
+For:
+Only two angles type "AAA"
+Two angles and a side that is not between type the letters"AAS"
+Two angles and a side that is between type the letters "ASA"
+Two sides and an angle between type the letters"SAS"
+Two Sides and an Angle not between type the letters "SSA"
+All three sides type the letters "SSS"
+
+triangle = Prompt the user to enter three letters
+
+If triangle = AAA - 1
+	angle a = prompt 
+	angle b = prompt 
+	calculate angle c = 180 - angle a + angle b
+
+else if triangle = AAS - 2
+	angle a = prompt 
+	angle  c = prompt
+	side c = prompt 
+	calucate angle b = 180 - angle a + side c 
+	calculate side a = side c / sinC * sinA
+	calculate side b = side a / sinA * sinB
+
+else if triangle = ASA - 3
+	angle a = prompt 
+	angle b = prompt
+	side c = prompt
+	calculate angle C = 180 - angle A + angle B
+	calculate side a = side c / sinC * sinA
+	calculate side b = side a / sinA * sinB 
+
+else if triangle = SAS - 4
+	side b = prompt
+	angle A = prompt
+	side c =prompt
+	calculate side a = sqrt((side b)^2 + (side c)^2 - 2ac cosA)
+	calculate angle B = inverse(sinA / a * b) 
+	calculate angle C = 180 - angle A + angle B
+
+else if triangle = SSA
+	side b = prompt
+	side c = prompt
+	angle B = prompt
+	calculate side a = sqrt((side b)^2 + (side c)^2 - 2ac cosA)
+	calculate angle A = inverse(sinB / b * a)
+	calculate angle C = 180 - angle A + angle B
+
+else if triangle = SSS
+	side a = prompt
+	side b = prompt
+	side c = propmt
+	calculate angle A = (b^2 + c^2 - a^2) / 2bc
+	calculate angle B = inverse(sinA / a * b)
+	calculate angle C = 180 - angle A + angle B
+
+If side a == side b == side c ==
+	Print sides a, b and c are proportional
+		else
+			Print side a, side b, side c, angle A, angle B, angle C
+	
+	
+
+
